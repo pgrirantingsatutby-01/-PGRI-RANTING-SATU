@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikatan Pendidik Indonesia (IPI)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>IPI <strong>Indonesia</strong></span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#beranda" class="active">Beranda</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#program">Program</a>
+                <a href="#berita">Berita</a>
+                <a href="#kontak" class="btn-primary">Gabung Anggota</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="container hero-content">
+            <h1>Mewujudkan Pendidik Indonesia yang Profesional & Berdedikasi</h1>
+            <p>Wadah kolaborasi, inovasi, dan pengembangan kompetensi guru untuk mencerdaskan kehidupan bangsa.</p>
+            <div class="hero-buttons">
+                <a href="#program" class="btn-primary">Jelajahi Program</a>
+                <a href="#tentang" class="btn-secondary">Pelajari Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <h3>50.000+</h3>
+                <p>Anggota Guru</p>
+            </div>
+            <div class="stat-card">
+                <h3>34</h3>
+                <p>Pengurus Daerah</p>
+            </div>
+            <div class="stat-card">
+                <h3>1.200+</h3>
+                <p>Pelatihan Terselenggara</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="section">
+        <div class="container grid-2">
+            <div class="about-text">
+                <span class="badge">Tentang Kami</span>
+                <h2>Meningkatkan Kualitas Pendidikan Melalui Penguatan Pendidik</h2>
+                <p>Ikatan Pendidik Indonesia berkomitmen untuk mendampingi setiap guru di seluruh penjuru negeri melalui program peningkatan kapasitas, advokasi profesi, dan jaringan kerja sama nasional.</p>
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Pelatihan Sertifikasi & Kompetensi Digital</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Perlindungan Hukum & Kesejahteraan Guru</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Forum Riset & Inovasi Pembelajaran</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-award card-icon"></i>
+                <h3>Integritas & Keunggulan</h3>
+                <p>Menjadi mitra strategis pemerintah dan masyarakat dalam mentransformasi ekosistem pendidikan Indonesia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Unggulan -->
+    <section id="program" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Program Unggulan</h2>
+                <p>Layanan dan kegiatan yang dirancang khusus untuk menunjang profesionalisme pendidik.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon-box"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Akademi Guru Digital</h3>
+                    <p>Pelatihan pemanfaatan teknologi AI dan media interaktif dalam proses belajar mengajar.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon-box"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Jurnal Pendidikan</h3>
+                    <p>Wadah publikasi karya ilmiah dan penelitian tindakan kelas (PTK) bagi para guru.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon-box"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h3>Advokasi & Konsultasi</h3>
+                    <p>Layanan pendampingan hukum dan perlindungan profesi guru dalam menjalankan tugas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Kontak / pendaftaran -->
+    <section id="kontak" class="section">
+        <div class="container contact-container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Ingin bergabung atau memiliki pertanyaan seputar keanggotaan? Silakan kirim pesan Anda.</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="nama" placeholder="Nama Lengkap & Gelar" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Alamat Email Aktiv" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="pesan" rows="4" placeholder="Pesan atau Pertanyaan" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-full">Kirim Pesan</button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo white">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>IPI <strong>Indonesia</strong></span>
+                </a>
+                <p>Mencerdaskan Bangsa, Memajukan Pendidik.</p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 Ikatan Pendidik Indonesia. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
